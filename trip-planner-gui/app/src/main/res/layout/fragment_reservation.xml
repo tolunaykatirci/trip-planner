@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/startDateText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/sudoText"
+            android:textStyle="bold"
+            android:text="@string/start_date_text" />
+
+        <EditText
+            android:id="@+id/startDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:clickable="true"
+            android:focusable="false"
+            android:inputType="date" />
+
+        <TextView
+            android:id="@+id/endDateText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/sudoText"
+            android:textStyle="bold"
+            android:text="@string/end_date_text" />
+
+        <EditText
+            android:id="@+id/endDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:clickable="true"
+            android:focusable="false"
+            android:inputType="date" />
+
+        <TextView
+            android:id="@+id/passengerNameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/sudoText"
+            android:textStyle="bold"
+            android:text="@string/passenger_name_text" />
+
+        <EditText
+            android:id="@+id/passengerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/passengerCountText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/sudoText"
+            android:textStyle="bold"
+            android:text="@string/passenger_count_text" />
+
+        <EditText
+            android:id="@+id/passengerCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberSigned" />
+
+        <TextView
+            android:id="@+id/preferredHotelText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/sudoText"
+            android:textStyle="bold"
+            android:text="@string/preferred_hotel_text" />
+
+        <Spinner
+            android:id="@+id/hotelSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/preferredAirlineText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/sudoText"
+            android:textStyle="bold"
+            android:text="@string/preferred_airline_text" />
+
+        <Spinner
+            android:id="@+id/airlineSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/makeReservationButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/sudoAccent"
+            android:textColor="#FFFFFF"
+            android:text="@string/make_reservation_btn" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <Button
+            android:id="@+id/clearAllButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/sudoPrimary"
+            android:textColor="#FFFFFF"
+            android:text="@string/clear_btn" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+    </LinearLayout>
+
+</ScrollView>
